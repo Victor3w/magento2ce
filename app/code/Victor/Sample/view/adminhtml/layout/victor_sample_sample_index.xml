@@ -13,7 +13,7 @@
     </head>
     <body>
         <referenceContainer name="content">
-            <uiComponent name="victor_sample_sample_edit_listing" />
+            <uiComponent name="victor_sample_sample_listing" />
         </referenceContainer>
     </body>
 </page>

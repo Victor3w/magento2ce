@@ -1,0 +1,20 @@
+<?php
+/**@var Victor\Sample\Block\Sample $block**/
+/**@var Victor\Sample\Model\Sample $sample**/
+$sample = $block->getSample();
+?>
+<?php if (!empty($sample->getTitle())): ?>
+    <h1>
+        <?= __($sample->getTitle());?>
+    </h1>
+<?php endif; ?>
+<?php if (!empty($sample->getDescription())): ?>
+    <p>
+        <?= __($sample->getDescription());?>
+    </p>
+<?php endif; ?>
+<?php if (!empty($sample->getUrl())): ?>
+    <a href="<?=$sample->getUrl();?>">
+        <?= __('Link');?>
+    </a>
+<?php endif; ?>
